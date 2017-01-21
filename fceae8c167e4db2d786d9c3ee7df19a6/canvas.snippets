@@ -1,0 +1,15 @@
+//The CanvasRenderingContext2D interface is used for drawing rectangles, text, 
+//images and other objects onto the canvas element. 
+//It provides the 2D rendering context for the drawing surface of a <canvas> element.
+ 
+//To get an object of this interface, call getContext() on a <canvas> element, 
+//supplying "2d" as the argument:
+
+var canvas = document.getElementById('mycanvas'); // in your HTML this element appears 
+var ctx = canvas.getContext('2d');                 //as <canvas id="mycanvas"></canvas>
+
+//Once you have the 2D rendering context for a canvas, you can draw within it. For example:
+
+ctx.fillStyle = "rgb(200,0,0)"; // sets the color to fill in the rectangle with
+ctx.fillRect(10, 10, 55, 50);   // draws the rectangle at position 10, 10 with a width of 55 and a 
+                                  //height of 50

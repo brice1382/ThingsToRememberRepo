@@ -1,0 +1,25 @@
+body{margin:0; padding:0;}
+@-webkit-keyframes backgroundscroll {
+  from {background-position: 0 0;}
+  to {background-position: -400px 0;}
+  }
+  
+@keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -400px 0;}
+}
+
+/*This class tag is just some stuff the original writter made up*/
+.home-product {
+    background:url("");
+    float: left;
+    padding: 100px 0;
+    width: 100%;
+    color:#fff !important;
+	  min-height:641px;
+	  -webkit-animation: backgroundScroll 35s linear infinite;
+    animation: backgroundScroll 10s linear infinite;
+    background-size:130% 100%;
+	  background-position:top;
+	  background-attachment:fixed;
+}
