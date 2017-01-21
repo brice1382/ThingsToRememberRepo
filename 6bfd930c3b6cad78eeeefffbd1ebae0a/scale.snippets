@@ -1,0 +1,18 @@
+// HTML
+<canvas id="canvas"></canvas>
+
+
+// JS
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+ctx.scale(10, 3);
+ctx.fillRect(10,10,10,10);
+
+// reset current transformation matrix to the identity matrix
+ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+// SYNTAX
+void ctx.scale(x, y);
+
+
